@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?><!--로그인 액티비티에서 넘어오는메뉴-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="이메일 로그인"
+        android:textSize="25sp" />
+    <!--이메일 주소 에디트텍스트-->
+    <EditText
+        android:id="@+id/email_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:hint="이메일주소"
+        android:inputType="textEmailAddress" />
+
+    <!--비밀번호 에디트 텍스트-->
+    <EditText
+        android:id="@+id/email_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="SNS 로그인"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--페이스북-->
+        <ImageView
+            android:id="@+id/facebook_login"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/kakaotalk_login"
+            android:src="@drawable/friendsrequest" />
+
+        <!--카톡-->
+        <ImageView
+            android:id="@+id/kakaotalk_login"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/friendsrequest" />
+
+        <!--위챗(중국어)-->
+        <ImageView
+            android:id="@+id/wechat_login"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/kakaotalk_login"
+            android:src="@drawable/friendsrequest" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/autologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="자동로그인"
+            android:textSize="25sp" />
+        <!--자동로그인 체크박스-->
+        <CheckBox
+            android:id="@+id/autologin_checkbok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/autologin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="로그인"
+        android:layout_margin="20dp"
+        android:textSize="25sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        >
+        <!--회원가입-->
+        <TextView
+            android:id="@+id/create_acount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/slash"
+            android:text="회원가입" />
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="/"
+            android:textSize="25sp"/>
+
+        <!--비번 찾기-->
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/slash"
+            android:text="비밀번호 찾기"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+</LinearLayout>

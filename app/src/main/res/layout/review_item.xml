@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--구매평 리사이클러뷰 아이템-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--사용자 닉네임-->
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noname"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nickname"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:text="testText~~~"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/friendsrequest"/>
+    </RelativeLayout>
+
+</LinearLayout>

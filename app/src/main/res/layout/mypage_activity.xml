@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--내정보페이지 MypageActiviy와 연계-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:text="마이페이지"
+            android:textStyle="bold"
+            android:textSize="27sp" />
+
+        <!--설정 버튼 -->
+        <ImageView
+            android:id="@+id/setting_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/friendsrequest"/>
+    </RelativeLayout>
+
+    <!--유저 프로필 부분-->
+    <RelativeLayout
+        android:id="@+id/user_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/friendsrequest"/>
+        <TextView
+            android:id="@+id/userid"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:text="vcooker"
+            android:textSize="27sp"/>
+        <ImageView
+            android:id="@+id/user_next_btn"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/friendsrequest"
+            />
+    </RelativeLayout>
+
+    <!--스탬프 부분-->
+    <RelativeLayout
+        android:id="@+id/stamp_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="스탬프"
+            android:textSize="27sp"/>
+        <ImageView
+            android:id="@+id/stamp_next_btn"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/friendsrequest"
+            />
+    </RelativeLayout>
+
+    <!--현재 쿠폰 포인트-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="포인트"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="쿠폰"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/point_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="0 P"
+            android:layout_marginRight="10dp"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/cupon_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="0"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

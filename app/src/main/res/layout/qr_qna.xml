@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--qr 스캔후 qna 창-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/titleqna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:text="Q&amp;A"
+            android:textSize="25sp" />
+        <!--qna 갯수 표시 텍스트-->
+        <TextView
+            android:id="@+id/qna_number_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/titleqna"
+            android:text="16"
+            android:textSize="25sp" />
+        <!--취소 버튼-->
+        <ImageView
+            android:id="@+id/cancel_action"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/friendsrequest" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="문의하기"
+        android:textSize="20sp" />
+    <!--문의 댓글 이모티콘과 사진의 따로나온 의미는 모르겠음 drawbleLeft로 아이콘삽입-->
+    <EditText
+        android:id="@+id/qna_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp" />
+    <!--qna 새로고침-->
+    <ImageView
+        android:id="@+id/reload_qna"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/friendsrequest"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/qna_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+</LinearLayout>

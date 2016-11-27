@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--qr스캔 결과 xml-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--sns 공유 이미지-->
+        <ImageView
+            android:id="@+id/result_share"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/friendsrequest"/>
+        <!--구매평 이미지-->
+        <ImageView
+            android:id="@+id/review_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/result_share"
+            android:layout_centerVertical="true"
+            android:src="@drawable/friendsrequest"/>
+        <!--구매평 카운트 텍스트-->
+        <TextView
+            android:id="@+id/review_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/review_btn"
+            android:textSize="18sp"
+            android:text="0"/>
+
+        <!--qna 이미지-->
+        <ImageView
+            android:id="@+id/qna_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/review_count"
+            android:layout_centerVertical="true"
+            android:src="@drawable/friendsrequest"/>
+        <!--qna 카운트 텍스트-->
+        <TextView
+            android:id="@+id/qna_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/qna_btn"
+            android:textSize="18sp"
+            android:text="0"/>
+
+        <!--더보기 버튼 (스탬프요청 상품문의 공유하기 좋아요 item달아야됨)-->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/friendsrequest"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상점명"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+        <!--상점명 (파싱)-->
+        <TextView
+            android:id="@+id/shopname_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동대문 패션타운 / 1층 30호"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--위치 아이콘-->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/friendsrequest" />
+            <!--qr 아이콘-->
+            <ImageView
+                android:id="@+id/qr_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/friendsrequest"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--웹뷰-->
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</LinearLayout>

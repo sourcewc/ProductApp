@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--SearchActiviy xml-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--검색바 :스타일부분 건드려서 외곽선 설정해줘야함
+        maxline 유도리 부분설정-->
+        <EditText
+            android:id="@+id/search_edit_frame"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+
+        <!--검색 요청 아이콘 (돋보기)-->
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/search_edit_frame"
+            android:src="@drawable/friendsrequest"/>
+
+
+        <!--2차개발 버튼 <ImageView
+            android:id="@+id/"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/search_edit_frame"
+            android:src="@drawable/friendsrequest"//>-->
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="이미지 요청결과 "
+            android:textSize="20sp"/>
+        <!--검색결과 카운트 텍스트뷰-->
+        <TextView
+            android:id="@+id/search_resultcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0)●"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_reclyerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"/>
+    </LinearLayout>
+</LinearLayout>

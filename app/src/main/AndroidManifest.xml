@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jainjang">
 
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +25,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.QRSCANAcvitiy"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.HistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MypageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.CaptureActivityAnyOrientation"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+        <activity android:name=".activity.QnaActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ReviewActivity"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

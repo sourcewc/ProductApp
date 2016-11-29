@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Jainjang</string>
+    <string name="qr_menu">스탬프요청</string>
+    <string name="qr_stamp">상품문의</string>
 </resources>

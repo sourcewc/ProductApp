@@ -18,6 +18,7 @@
 
         <!--팔로워수 표시(서버 요청에따라 텍스트 두개쓸수도있음)-->
         <TextView
+            android:id="@+id/follower_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0/0"

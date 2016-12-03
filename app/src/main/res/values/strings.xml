@@ -2,4 +2,6 @@
     <string name="app_name">Jainjang</string>
     <string name="qr_menu">스탬프요청</string>
     <string name="qr_stamp">상품문의</string>
+    <string name="qr_share">공유하기</string>
+    <string name="qr_like">좋아요</string>
 </resources>

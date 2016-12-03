@@ -1,14 +1,19 @@
 package com.jainjang.activity;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.jainjang.R;
+import com.jainjang.fragment.QRAreaFragment;
+
+;
 
 /**
  * Created by Shin on 2016-11-27.
@@ -17,6 +22,7 @@ import com.jainjang.R;
 public class QRSCANAcvitiy extends Activity {
     Button scanBtn;
     String TAG;
+    Fragment qrFragment;
 
 
     @Override
@@ -25,19 +31,23 @@ public class QRSCANAcvitiy extends Activity {
         setContentView(R.layout.qrscan_activity);
         scanBtn = (Button) findViewById(R.id.scan_btn);
 
+        qrFragment =new QRAreaFragment();
+
         //스캔 버튼 이벤트
-//        scanBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                new IntentIntegrator(this).initiateScan();
-//            }
-//        });
-        IntentIntegrator integrator = new IntentIntegrator(this);
-        integrator.setCaptureActivity(CaptureActivityAnyOrientation.class);
-        integrator.setOrientationLocked(false);
-        integrator.initiateScan();
+        scanBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                FragmentManager fm = getFragmentManager();
+//                FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//                fragmentTransaction.replace(R.id.frame, qrFragment);
+//                fragmentTransaction.commit();
+                IntentIntegrator integrator = new IntentIntegrator(QRSCANAcvitiy.this);
+                integrator.setOrientationLocked(false);
 
+                integrator.initiateScan();
 
+            }
+        });
 
     }
 

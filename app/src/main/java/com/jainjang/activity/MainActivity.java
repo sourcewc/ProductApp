@@ -42,7 +42,7 @@ public class MainActivity extends TabActivity {
         tabHost.addTab(spec);
 
 
-        tabHost.setCurrentTab(0); //현재화면에 보여질 탭의 위치를 결정
+        tabHost.setCurrentTab(1); //현재화면에 보여질 탭의 위치를 결정
 
     }
 }

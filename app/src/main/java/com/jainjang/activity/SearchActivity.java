@@ -18,5 +18,8 @@ public class SearchActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_activity);
 
+
+
     }
 }
+

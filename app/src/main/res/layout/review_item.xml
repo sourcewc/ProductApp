@@ -2,7 +2,7 @@
 <!--구매평 리사이클러뷰 아이템-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="100dp">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,6 +16,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginLeft="15dp"/>
         <TextView
+            android:id="@+id/review"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/nickname"
@@ -25,6 +26,7 @@
             android:text="testText~~~"/>
 
         <ImageView
+            android:id="@+id/optionMenu"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginRight="15dp"

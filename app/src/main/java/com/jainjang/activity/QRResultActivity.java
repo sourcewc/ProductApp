@@ -10,6 +10,7 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 
 import com.jainjang.R;
@@ -20,6 +21,8 @@ import com.jainjang.R;
  */
 public class QRResultActivity extends Activity {
     WebView mWebView;
+    LinearLayout firstImaLayout;
+    LinearLayout secondImaLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +32,12 @@ public class QRResultActivity extends Activity {
         ImageView qnaImage = (ImageView) findViewById(R.id.qna_btn);
         ImageView reviewImage = (ImageView) findViewById(R.id.review_btn);   //리뷰,qna 이벤트용
         ImageView qrMore=(ImageView)findViewById(R.id.qr_more); //더보기 버튼
+        ImageView memoImage=(ImageView)findViewById(R.id.memo_btn); //메모 버튼
+        firstImaLayout = (LinearLayout)findViewById(R.id.firstimg_layout);
+        secondImaLayout = (LinearLayout)findViewById(R.id.secoundimg_layout);
 
+//        firstImaLayout.setVisibility(GONE);
+//        secondImaLayout.setVisibility(GONE);
 
         qnaImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +61,13 @@ public class QRResultActivity extends Activity {
             }
         });
 
+        memoImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                firstImaLayout.setVisibility(view.VISIBLE);
+                secondImaLayout.setVisibility(view.VISIBLE);
+            }
+        });
 
 
         //웹뷰 부분 html 파일필요 html소스는 main/assets 안에

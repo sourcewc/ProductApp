@@ -59,14 +59,6 @@
         android:background="@drawable/boder"
         android:layout_marginTop="5dp" />
     <!--qna 새로고침-->
-    <ImageView
-        android:id="@+id/reload_qna"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/friendsrequest"
-        android:layout_gravity="right"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"/>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -78,4 +70,13 @@
             android:layout_height="match_parent">
         </android.support.v7.widget.RecyclerView>
     </FrameLayout>
+
+    <ImageView
+        android:id="@+id/reload_qna"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/friendsrequest"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"/>
 </LinearLayout>

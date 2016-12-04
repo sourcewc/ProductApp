@@ -83,7 +83,9 @@
             android:layout_height="200dp"
             android:layout_alignParentBottom="true"
             android:id="@+id/frame"
-            />
+            >
+            <!--<include 여기에 capture.xml-->
+        </FrameLayout>
 
         <!--이미지로 교체 필요-->
     </LinearLayout>

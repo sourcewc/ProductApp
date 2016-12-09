@@ -6,8 +6,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Window;
 
-import com.jainjang.R;
-
 /**
  * Created by Shin on 2016-11-27.
  */

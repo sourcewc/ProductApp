@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 
-import com.jainjang.R;
 
 /**
  * Created by Shin on 2016-11-27.

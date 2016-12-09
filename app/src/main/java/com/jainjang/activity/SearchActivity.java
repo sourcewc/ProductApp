@@ -3,7 +3,6 @@ package com.jainjang.activity;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.jainjang.R;
 
 /**
  * Created by Shin on 2016-11-24.

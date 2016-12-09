@@ -13,8 +13,6 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import com.jainjang.R;
-
 import java.util.ArrayList;
 
 /**

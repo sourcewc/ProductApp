@@ -4,13 +4,9 @@
     package="com.jainjang">
 
     <uses-feature android:name="android.hardware.camera"/>
-
     <uses-permission android:name="android.permission.CAMERA"/>
-
     <uses-permission android:name="android.permission.FLASHLIGHT"/>
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -40,11 +36,9 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".activity.QRResultActivity"
             android:screenOrientation="portrait"/>
-
         <activity android:name=".activity.QnaActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden"/>
-
         <activity android:name=".activity.ReviewActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden"/>
